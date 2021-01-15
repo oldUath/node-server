@@ -13,5 +13,18 @@ server.on('request',(request,response)=>{
     console.log('request.headers');
     console.log(request.headers);
 
+    //post请求接收数据
+    const array=[];
+    request.on('data',(chunk)=>{
+        array.push(chunk)
+    });
+    request.on('end',()=>{
+        const body=Buffer.concat(array).toString();
+        console.log('body:');
+        console.log(body);
+        //响应，发送给到请求方
+        response.end('hi')
+    })
+
 });
 server.listen(8888)
