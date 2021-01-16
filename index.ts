@@ -1,30 +1,35 @@
 import * as http from 'http';
+import * as fs from 'fs';
+import * as p from 'path';
 const server = http.createServer();
 
-server.on('request',(request,response)=>{
-    // //当有人请求时会在这打印这一句
-    // console.log('有人请求了');
-    // //当有人请求了会给他发一个hi
-    // response.end('hi');
-    console.log('request.method');
-    console.log(request.method);
-    console.log('request.url');
-    console.log(request.url);
-    console.log('request.headers');
-    console.log(request.headers);
 
-    //post请求接收数据
-    const array=[];
-    request.on('data',(chunk)=>{
-        array.push(chunk)
-    });
-    request.on('end',()=>{
-        const body=Buffer.concat(array).toString();
-        console.log('body:');
-        console.log(body);
-        //响应，发送给到请求方
-        response.end('hi')
-    })
+const publicDir = p.resolve(__dirname,'public');
+server.on('request',(request,response)=>{
+    const {method,url,headers} = request
+    switch (url) {
+        case '/index.html':
+            fs.readFile(p.resolve(publicDir,'index.html'),(error,data)=>{
+                if(error)throw error
+                response.end(data.toString())
+            });
+            break;
+        case '/style.css':
+            response.setHeader('Content-type','text/css;charset=utf-8')
+            fs.readFile(p.resolve(publicDir,'style.css'),(error,data)=>{
+                if(error)throw error
+                response.end(data.toString())
+            });
+            break;
+        case '/index.js':
+            response.setHeader('Content-type','text/js;charset=utf-8')
+            fs.readFile(p.resolve(publicDir,'index.js'),(error,data)=>{
+                if(error)throw error
+                response.end(data.toString())
+            });
+            break;
+    }
+
 
 });
 server.listen(8888)
