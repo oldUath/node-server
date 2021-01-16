@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3e20b6-00b0-442b-9932-e1802ab1132a" name="Default Changelist" comment="" />
+    <list default="true" id="7a3e20b6-00b0-442b-9932-e1802ab1132a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1n3F5r0KwgAbffPizvJfw6uF4oE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +32,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="ts.external.directory.path" value="D:\developSoftware\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,7 +43,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610610688240</updated>
-      <workItem from="1610610689695" duration="14088000" />
+      <workItem from="1610610689695" duration="14864000" />
+      <workItem from="1610778226191" duration="1267000" />
     </task>
     <servers />
   </component>
@@ -52,13 +59,13 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="826" y="161" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1610610821928" />
-    <state x="555" y="67" width="981" height="707" key="SettingsEditor" timestamp="1610610823133">
+    <state x="394" y="84" width="981" height="707" key="SettingsEditor" timestamp="1610777490052">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="555" y="67" width="981" height="707" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1610610823133" />
-    <state x="668" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1610766159409">
+    <state x="394" y="84" width="981" height="707" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1610777490052" />
+    <state x="668" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1610777530381">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="668" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1610766159409" />
+    <state x="668" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1610777530381" />
   </component>
 </project>
