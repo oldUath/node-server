@@ -30,6 +30,7 @@ server.on('request',(request,response)=>{
                 })
             }
         }else{
+            response.setHeader('Cache-Control','public, max-age=30000')
             response.end(data)
         }
     });
